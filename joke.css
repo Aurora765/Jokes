@@ -1,6 +1,19 @@
-body{
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
     background-color: #526c79;
-}
+    }
+    
+   .nav .logo {
+    color: #fff;
+    margin: 5px;
+    font-family: sans-serif;
+   }
+    
+    
 
 img {
     position: absolute;
@@ -22,10 +35,11 @@ img {
     background-color: #fff;
     opacity: 0.2;
     z-index: -3;
-    }
+}
 
 .wrapper{
-    width: 500px;
+    max-width: 500px;
+    width: 90%;
     padding: 50px 40px;
     background-color: #fafdfd;
     position: absolute;
@@ -35,8 +49,6 @@ img {
     border-radius: 5px;
     box-shadow: 20px 20px 40px rgba(97,63,0,0.4);
 }
-
-
 
 h2{
     display: block;
@@ -77,4 +89,48 @@ button{
     border-radius: 5px;
     cursor: pointer;
     outline: none;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 30px 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 20px 0;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 15px 0;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 }
