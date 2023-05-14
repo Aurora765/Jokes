@@ -39,6 +39,7 @@ img {
 
 .wrapper{
     max-width: 500px;
+    height: auto;
     width: 90%;
     padding: 50px 40px;
     background-color: #fafdfd;
@@ -95,7 +96,7 @@ button{
 
 @media screen and (max-width: 768px) {
   .wrapper {
-    padding: 30px 20px;
+    padding: 50px 30px;
   }
   
   h2 {
@@ -116,7 +117,7 @@ button{
 
 @media screen and (max-width: 576px) {
   .wrapper {
-    padding: 20px;
+    padding: 50px 30px;
   }
   
   h2 {
